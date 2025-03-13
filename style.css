@@ -1,0 +1,41 @@
+
+            /* Styles pour l'en-tête à insérer */
+            header {
+                background: lightgray;
+            }
+            /* Styles pour les liens de la zone de navigation */
+            nav {background: whitesmoke; 
+                float: left
+            }
+            nav ul {list-style: none; 
+                padding: 30px
+            }
+            nav a {
+                text-decoration: none;
+                color: black;
+            }
+            nav a:hover {
+                color: magenta;
+            }
+            aside {float: right; 
+                color: magenta; 
+                font-size: 1.2em; 
+                width: 150px; 
+                border: solid
+            }
+
+            /* Styles pour les liens du pied de page */
+            footer {clear: both; 
+                padding-top: 2em; 
+                background: dimgray; 
+                color: white
+            }
+            footer div {float: right;
+            }
+            footer a {
+                text-decoration: none;
+                color: gainsboro;
+            }
+            footer a:hover {
+                color: white;
+            }
