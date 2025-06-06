@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Mon Portfolio</title>
+    <link rel="stylesheet" href="../style/portfolio-css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">MP</div>
+                <span>MonPortfolio</span>
+            </div>
+            <div class="burger-menu">☰</div>
+            <nav>
+                <ul>
+                    <li><a href="../portfolio-index.html">Accueil</a></li>
+                    <li><a href="portfolio-about.html">À propos</a></li>
+                    <li><a href="portfolio-projects.html" class="active">Projets</a></li>
+                    <li><a href="portfolio-bilan.html">Bilan personnel</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="section">
+                <h2>Mes Projets</h2>
+                <p>Découvrez une sélection de mes réalisations récentes. Chaque projet représente un défi unique qui m'a permis de développer mes compétences et d'explorer de nouvelles technologies.</p>
+            </section>
+            <section class="section year-section">
+                <h2>Projets de 1ère année</h2>
+                <div class="projects-grid">
+
+                    <!-- Projets 1 à 4 -->
+                    <div class="project-card">
+                        <div class="project-img">Projet 1</div>
+                        <div class="project-content">
+                            <h3 class="project-title">Site E-commerce</h3>
+                            <p>Conception et développement d'une plateforme e-commerce complète avec système de paiement intégré.</p>
+                            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+                            <a href="#" class="btn view-project" data-project="project1">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">Projet 2</div>
+                        <div class="project-content">
+                            <h3 class="project-title">Application Mobile</h3>
+                            <p>Développement d'une application mobile de gestion de tâches avec synchronisation cloud.</p>
+                            <p><strong>Technologies:</strong> React Native, Firebase</p>
+                            <a href="#" class="btn view-project" data-project="project2">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">Projet 3</div>
+                        <div class="project-content">
+                            <h3 class="project-title">Refonte de Site Web</h3>
+                            <p>Modernisation d'un site existant pour améliorer UX et SEO.</p>
+                            <p><strong>Technologies:</strong> HTML5, CSS3, WordPress</p>
+                            <a href="#" class="btn view-project" data-project="project3">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">Projet 4</div>
+                        <div class="project-content">
+                            <h3 class="project-title">Dashboard Analytics</h3>
+                            <p>Tableau de bord interactif pour visualiser des données commerciales.</p>
+                            <p><strong>Technologies:</strong> JavaScript, Chart.js, Node.js</p>
+                            <a href="#" class="btn view-project" data-project="project4">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <!-- Projets 5 à 7 -->
+                    <div class="project-card">
+                        <div class="project-img">Projet 5</div>
+                        <div class="project-content">
+                            <h3 class="project-title">Jeu Web Multijoueur</h3>
+                            <p>Jeu en ligne en temps réel avec chat et classement.</p>
+                            <p><strong>Technologies:</strong> HTML5, Socket.io, Node.js</p>
+                            <a href="#" class="btn view-project" data-project="project5">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">Projet 6</div>
+                        <div class="project-content">
+                            <h3 class="project-title">Portfolio Dynamique</h3>
+                            <p>Portfolio avec ajout de contenu dynamique via back-end.</p>
+                            <p><strong>Technologies:</strong> React, Node.js, MongoDB</p>
+                            <a href="#" class="btn view-project" data-project="project6">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">Projet 7</div>
+                        <div class="project-content">
+                            <h3 class="project-title">Bot Discord</h3>
+                            <p>Bot Discord avec commandes et intégration API.</p>
+                            <p><strong>Technologies:</strong> JavaScript, Discord.js, REST API</p>
+                            <a href="#" class="btn view-project" data-project="project7">Voir le projet</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Inclusion des modals de projets 1 à 4 déjà présents dans ton code -->
+        <!-- Modals pour chaque projet -->
+        <div id="project1" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-header">
+                    <h2>Site E-commerce</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <div class="project-img">Image du Projet 1</div>
+                    </div>
+                    <div class="modal-details">
+                        <div class="modal-section">
+                            <h3>Description</h3>
+                            <p>Ce projet est une plateforme e-commerce complète qui permet aux utilisateurs de parcourir des produits, les ajouter au panier, et finaliser leurs achats. Il comprend également un tableau de bord administrateur pour gérer les produits, les commandes et les utilisateurs.</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>Technologies utilisées</h3>
+                            <div class="tags">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">PHP</span>
+                                <span class="skill-tag">MySQL</span>
+                            </div>
+                        </div>
+                        <div class="modal-section">
+                            <h3>Fonctionnalités principales</h3>
+                            <ul>
+                                <li>Système d'authentification utilisateur</li>
+                                <li>Catalogue de produits avec filtres</li>
+                                <li>Panier d'achat dynamique</li>
+                                <li>Passerelle de paiement sécurisée</li>
+                                <li>Tableau de bord administrateur</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>Liens</h3>
+                            <div class="modal-links">
+                                <a href="#" class="btn">Voir le site</a>
+                                <a href="#" class="btn">Code source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="project2" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-header">
+                    <h2>Application Mobile</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <div class="project-img">Image du Projet 2</div>
+                    </div>
+                    <div class="modal-details">
+                        <div class="modal-section">
+                            <h3>Description</h3>
+                            <p>Cette application mobile aide les utilisateurs à gérer leurs tâches quotidiennes et projets. Elle offre une interface intuitive pour créer, organiser et suivre l'avancement des tâches, avec synchronisation cloud pour accéder à ses données sur plusieurs appareils.</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>Technologies utilisées</h3>
+                            <div class="tags">
+                                <span class="skill-tag">React Native</span>
+                                <span class="skill-tag">Firebase</span>
+                                <span class="skill-tag">Redux</span>
+                                <span class="skill-tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="modal-section">
+                            <h3>Fonctionnalités principales</h3>
+                            <ul>
+                                <li>Création et organisation de tâches</li>
+                                <li>Listes et projets personnalisables</li>
+                                <li>Notifications et rappels</li>
+                                <li>Synchronisation multi-appareils</li>
+                                <li>Mode hors-ligne</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>Liens</h3>
+                            <div class="modal-links">
+                                <a href="#" class="btn">Play Store</a>
+                                <a href="#" class="btn">App Store</a>
+                                <a href="#" class="btn">Code source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="project3" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-header">
+                    <h2>Refonte de Site Web</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <div class="project-img">Image du Projet 3</div>
+                    </div>
+                    <div class="modal-details">
+                        <div class="modal-section">
+                            <h3>Description</h3>
+                            <p>Ce projet consistait à moderniser et optimiser un site web d'entreprise vieillissant. L'objectif était d'améliorer l'expérience utilisateur, d'optimiser les performances et le référencement, tout en créant une identité visuelle plus contemporaine.</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>Technologies utilisées</h3>
+                            <div class="tags">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">WordPress</span>
+                                <span class="skill-tag">SEO</span>
+                            </div>
+                        </div>
+                        <div class="modal-section">
+                            <h3>Améliorations réalisées</h3>
+                            <ul>
+                                <li>Design responsive pour tous les appareils</li>
+                                <li>Optimisation du temps de chargement</li>
+                                <li>Amélioration de l'architecture de l'information</li>
+                                <li>Intégration d'un système de blog</li>
+                                <li>Optimisation SEO on-page</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>Liens</h3>
+                            <div class="modal-links">
+                                <a href="#" class="btn">Voir le site</a>
+                                <a href="#" class="btn">Études de cas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="project4" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-header">
+                    <h2>Dashboard Analytics</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <div class="project-img">Image du Projet 4</div>
+                    </div>
+                    <div class="modal-details">
+                        <div class="modal-section">
+                            <h3>Description</h3>
+                            <p>Développement d'un tableau de bord analytique interactif pour aider une entreprise à visualiser et analyser ses données de vente, marketing et performances. Ce dashboard permet de prendre des décisions basées sur des données en temps réel.</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>Technologies utilisées</h3>
+                            <div class="tags">
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Chart.js</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Express</span>
+                                <span class="skill-tag">MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="modal-section">
+                            <h3>Fonctionnalités principales</h3>
+                            <ul>
+                                <li>Visualisations interactives en temps réel</li>
+                                <li>Filtres et segmentation de données</li>
+                                <li>Rapports exportables (PDF, CSV)</li>
+                                <li>Système d'alertes personnalisables</li>
+                                <li>Interface utilisateur intuitive</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>Liens</h3>
+                            <div class="modal-links">
+                                <a href="#" class="btn">Démo en ligne</a>
+                                <a href="#" class="btn">Code source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Modal Projet 5 -->
+    <div id="project5" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header"><h2>Jeu Web Multijoueur</h2></div>
+            <div class="modal-body">
+                <div class="modal-image"><div class="project-img">Image du Projet 5</div></div>
+                <div class="modal-details">
+                    <div class="modal-section"><h3>Description</h3>
+                        <p>Jeu en ligne en temps réel avec score, chat et avatars personnalisés.</p>
+                    </div>
+                    <div class="modal-section"><h3>Technologies utilisées</h3>
+                        <div class="tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">Socket.io</span>
+                            <span class="skill-tag">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="modal-section"><h3>Fonctionnalités principales</h3>
+                        <ul>
+                            <li>Multijoueur en temps réel</li>
+                            <li>Chat intégré</li>
+                            <li>Système de classement</li>
+                        </ul>
+                    </div>
+                    <div class="modal-section"><h3>Liens</h3>
+                        <div class="modal-links">
+                            <a href="#" class="btn">Démo</a>
+                            <a href="#" class="btn">Code source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Projet 6 -->
+    <div id="project6" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header"><h2>Portfolio Dynamique</h2></div>
+            <div class="modal-body">
+                <div class="modal-image"><div class="project-img">Image du Projet 6</div></div>
+                <div class="modal-details">
+                    <div class="modal-section"><h3>Description</h3>
+                        <p>Portfolio interactif alimenté par une base de données en temps réel et un back-office sécurisé.</p>
+                    </div>
+                    <div class="modal-section"><h3>Technologies utilisées</h3>
+                        <div class="tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="modal-section"><h3>Fonctionnalités principales</h3>
+                        <ul>
+                            <li>Ajout de projets via interface admin</li>
+                            <li>Affichage dynamique du contenu</li>
+                            <li>SEO optimisé</li>
+                        </ul>
+                    </div>
+                    <div class="modal-section"><h3>Liens</h3>
+                        <div class="modal-links">
+                            <a href="#" class="btn">Voir le site</a>
+                            <a href="#" class="btn">Code source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Projet 7 -->
+    <div id="project7" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header"><h2>Bot Discord</h2></div>
+            <div class="modal-body">
+                <div class="modal-image"><div class="project-img">Image du Projet 7</div></div>
+                <div class="modal-details">
+                    <div class="modal-section"><h3>Description</h3>
+                        <p>Bot Discord multifonctionnel pour modération, musique et mini-jeux.</p>
+                    </div>
+                    <div class="modal-section"><h3>Technologies utilisées</h3>
+                        <div class="tags">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Discord.js</span>
+                            <span class="skill-tag">REST API</span>
+                        </div>
+                    </div>
+                    <div class="modal-section"><h3>Fonctionnalités principales</h3>
+                        <ul>
+                            <li>Commandes de modération</li>
+                            <li>Lecture de musique</li>
+                            <li>Réactions automatisées</li>
+                        </ul>
+                    </div>
+                    <div class="modal-section"><h3>Liens</h3>
+                        <div class="modal-links">
+                            <a href="#" class="btn">Inviter le bot</a>
+                            <a href="#" class="btn">Code source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Mon Portfolio - Tous droits réservés</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/titouan-leblanc-floch-75b252327" class="social-icon" target="_blank">LinkedIn</a>
+            </div>
+            <p>Contact : titouanleblancfloch@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="../style/portfolio-js.js"></script>
+    <script src="../style/modal-js.js"></script>
+</body>
+</html>

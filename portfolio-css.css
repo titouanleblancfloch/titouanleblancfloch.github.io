@@ -1,0 +1,849 @@
+/* style.css - Styles communs pour toutes les pages */
+
+/* Variables pour les couleurs */
+:root {
+    --primary-blue: #336699;
+    --secondary-blue: 	#4F81BD;
+    --light-beige: #f5e1ce;
+    --dark-beige: 	#E6DCCB;
+    --text-color: #333;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent-color: #28a745;
+    --light-bg: #f8f9fa;
+}
+
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-beige);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* Header et navigation */
+header {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: var(--light-bg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-blue);
+    font-weight: bold;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-blue);
+}
+
+nav ul li a.active {
+    background-color: var(--secondary-blue);
+}
+
+/* Styles pour le contenu principal */
+main {
+    margin-top: 80px;
+    min-height: calc(100vh - 160px);
+}
+
+.hero-section {
+    background-color: var(--dark-beige);
+    padding: 4rem 0;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-blue);
+    transform: translateY(-3px);
+}
+
+.section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 2;
+    min-width: 300px;
+     text-align: justify;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.skill-tag {
+    background-color: var(--dark-beige);
+    color: var(--primary-blue);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: var(--light-beige);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-img {
+    height: 200px;
+    background-color: var(--secondary-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-content p {
+    text-align: justify;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-blue);
+}
+
+/* Style pour la page de bilan personnel */
+.bilan-hero {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.bilan-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.bilan-hero .subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.bilan-content {
+    padding: 4rem 2rem;
+    background-color: var(--light-bg);
+}
+
+.bilan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.bilan-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bilan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bilan-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.bilan-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* ✅ Timeline corrigée */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: var(--accent-color);
+    top: 0;
+    bottom: 0;
+    left: 20px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 30px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    border: 2px solid white;
+    left: 12px;
+    top: 5px;
+    z-index: 1;
+}
+
+.timeline-content {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Skills Styles */
+.skills-container {
+    margin-top: 2rem;
+}
+
+.skill {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skill-name {
+    flex: 1;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.skill-bar {
+    flex: 2;
+    height: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 1rem;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.skill-percentage {
+    width: 50px;
+    text-align: right;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+/* Reflection Styles */
+.reflection {
+    margin-top: 1.5rem;
+    line-height: 1.6;
+}
+
+.reflection p {
+    margin-bottom: 1rem;
+}
+
+.reflection p:last-child {
+    margin-bottom: 0;
+}
+
+/* Goals Styles */
+.goals {
+    margin-top: 1.5rem;
+}
+
+.goal {
+    margin-bottom: 1.5rem;
+}
+
+.goal:last-child {
+    margin-bottom: 0;
+}
+
+.goal h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: var(--secondary-color);
+}
+
+.goal ul {
+    padding-left: 1.5rem;
+}
+
+.goal ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-blue);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    text-decoration: underline;
+}
+
+/* Media queries pour responsive */
+@media screen and (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 70px;
+        right: -300px;
+        background-color: var(--primary-blue);
+        width: 250px;
+        height: 100vh;
+        transition: right 0.3s ease;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+
+    nav ul li {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 1rem 2rem;
+        border-radius: 0;
+    }
+
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-item {
+        padding-left: 50px;
+    }
+
+    .timeline-item::before {
+        left: 10px;
+    }
+
+    .bilan-hero {
+        padding: 4rem 1rem;
+    }
+
+    .bilan-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .bilan-content {
+        padding: 3rem 1rem;
+    }
+
+    .bilan-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skill-name {
+        margin-bottom: 0.5rem;
+        margin-right: 0;
+    }
+
+    .skill-bar {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .skill-percentage {
+        width: 100%;
+        text-align: left;
+        margin-top: 0.25rem;
+    }
+}
+/* CSS pour les modals de projet */
+
+/* Styles de la modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    animation: modalFadeIn 0.5s;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+@keyframes modalFadeIn {
+    from {transform: translateY(-50px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: var(--primary-blue);
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+    transition: color 0.3s;
+}
+
+.close-modal:hover {
+    color: var(--secondary-blue);
+}
+
+.modal-header {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: white;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-image {
+    margin-bottom: 20px;
+}
+
+.modal-image .project-img {
+    height: 300px;
+    border-radius: 8px;
+}
+
+.modal-section {
+    margin-bottom: 25px;
+}
+
+.modal-section h3 {
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.modal-section ul {
+    padding-left: 20px;
+}
+
+.modal-section ul li {
+    margin-bottom: 8px;
+}
+
+.modal-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.modal-links .btn {
+    margin-top: 0;
+}
+
+/* Pour les écrans plus larges */
+@media screen and (min-width: 768px) {
+    .modal-body {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .modal-image {
+        flex: 1;
+        margin-bottom: 0;
+    }
+    
+    .modal-details {
+        flex: 1;
+    }
+}
+
+/* Pour les écrans mobiles */
+@media screen and (max-width: 767px) {
+    .modal-content {
+        width: 95%;
+        margin: 20px auto;
+    }
+    
+    .modal-header {
+        padding: 15px;
+    }
+    
+    .modal-image .project-img {
+        height: 200px;
+    }
+}
+/* Styles pour la section CV */
+.cv-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cv-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cv-info h3 {
+    margin: 0 0 15px 0;
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-info p {
+    margin: 0;
+    color: #555;
+}
+
+.contact-info a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: var(--secondary-blue);
+}
+
+.cv-actions {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.cv-button {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.cv-button.download {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+.cv-button.download:hover {
+    background-color: var(--secondary-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.cv-button.view {
+    background-color: transparent;
+    color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.cv-button.view:hover {
+    background-color: var(--primary-blue);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Responsive pour la section CV */
+@media (max-width: 768px) {
+    .cv-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cv-actions {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .cv-button {
+        width: 100%;
+    }
+}
+
+/* Styles pour la photo de profil bien positionnée */
+.profile-photo-container {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 5px solid var(--primary-blue);
+    background: linear-gradient(135deg, var(--light-beige), var(--dark-beige));
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajustez ces valeurs pour bien positionner votre photo */
+    object-position: center 25%;; /* Options: center, top, bottom, left, right */
+    /* Vous pouvez aussi utiliser des pourcentages comme: 50% 20% */
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+/* Alternative avec différentes positions prêtes à l'emploi */
+/* Décommentez celle qui convient le mieux à votre photo */
+
+/* Pour une photo où le visage est en haut */
+/* .profile-photo { object-position: center 20%; } */
+
+/* Pour une photo où le visage est au centre */
+/* .profile-photo { object-position: center center; } */
+
+/* Pour une photo où le visage est légèrement décalé */
+/* .profile-photo { object-position: center 30%; } */
+
+/* Pour ajuster horizontalement aussi */
+/* .profile-photo { object-position: 60% 25%; } */
+
+/* Version responsive */
+@media (max-width: 768px) {
+    .profile-photo-container {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-photo-container {
+        width: 180px;
+        height: 180px;
+    }
+}
