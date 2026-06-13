@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Titouan Leblanc-Floch | Portfolio</title>
+    <link rel="stylesheet" href="../style/portfolio-css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">TLF</div>
+                <span>Titouan Leblanc-Floch | Portfolio</span>
+            </div>
+            <div class="burger-menu">☰</div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="portfolio-apropos.html">À propos</a></li>
+                    <li><a href="portfolio-projects.html" class="active">Projets</a></li>
+                    <li><a href="portfolio-bilan.html">Bilan personnel</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="section">
+                <h2>Mes Projets</h2>
+                <p>Découvrez une sélection de mes réalisations. Chaque projet m'a permis de développer mes compétences et d'explorer de nouvelles technologies.</p>
+            </section>
+
+            <section class="section year-section">
+                <h2>Projets de 1ère année</h2>
+                <div class="projects-grid" id="year1-projects"></div>
+            </section>
+
+            <section class="section year-section">
+                <h2>Projets de 2ème année</h2>
+                <div class="projects-grid" id="year2-projects"></div>
+            </section>
+
+            <section class="section year-section">
+                <h2>Projets de 3ème année</h2>
+                <div class="projects-grid" id="year3-projects">
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px;">
+                        <h3 style="font-size: 24px; color: #666; margin-bottom: 10px;">À bientôt... 🚀</h3>
+                        <p style="font-size: 16px; color: #999;">Les projets de 3ème année seront disponibles prochainement.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="modal-container"></div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 - Tous droits réservés</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/titouan-leblanc-floch-75b252327" class="social-icon" target="_blank">LinkedIn</a>
+            </div>
+            <p>Contact : titouanleblancfloch@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="../style/portfolio-js.js"></script>
+    <script src="../style/modal-js.js"></script>
+    <script>
+        window.PROJECTS_DATA = {
+            "projects": {
+                "year1": [
+                    {
+                        "id": "project1",
+                        "title": "Mise en œuvre d'une enquête",
+                        "technologies": ["Sphinx"],
+                        "description": "Ce projet consistait à réaliser un rapport basé sur les données d'une enquête menée dans le cadre de mes études. J'ai utilisé Sphinx pour créer un questionnaire en ligne, collecter les réponses et analyser les résultats.",
+                        "skills": ["Conception de questionnaires", "Analyse statistique", "Synthèse de données", "Présentation de résultats"],
+                        "content": "Contexte de l'enquête|Objectifs de l'étude|Population cible|Graphique pertinent extrait de l'enquête|Tableau de bord",
+                        "links": [
+                            {
+                                "label": "Voir le rapport",
+                                "url": "../image/L'étude supérieure privilégie la sédentarité au préjudice d'une activité physique Titouan Leblanc--Floch et Rose Chauvin.pdf"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "project2",
+                        "title": "Apprendre en situation la production de données en entreprise",
+                        "technologies": ["Excel"],
+                        "description": "Projet centré sur la compréhension des processus de production de données en environnement professionnel.",
+                        "skills": ["Gestion de données", "Documentation de processus", "Analyse critique"],
+                        "links": []
+                    },
+                    {
+                        "id": "project3",
+                        "title": "Gestion de fichiers PYTHON",
+                        "technologies": ["Python"],
+                        "description": "Développement de scripts Python pour manipuler, traiter et gérer efficacement des fichiers de différents formats.",
+                        "skills": ["Programmation Python", "Manipulation de fichiers", "Automatisation"],
+                        "links": []
+                    },
+                    {
+                        "id": "project4",
+                        "title": "Estimation par échantillonnage",
+                        "technologies": ["Excel", "RStudio"],
+                        "description": "Étude statistique sur les méthodes d'estimation par échantillonnage et leur application pratique.",
+                        "skills": ["Statistiques", "Échantillonnage", "Analyse quantitative"],
+                        "links": []
+                    },
+                    {
+                        "id": "project5",
+                        "title": "Conception et implémentation d'une base de données",
+                        "technologies": ["Looping", "EasyPHP", "Python"],
+                        "description": "Conception complète d'une base de données avec implémentation d'une interface web et scripts automatisés.",
+                        "skills": ["Modélisation de bases de données", "Programmation SQL et Python", "Automatisation de processus", "Analyse et prise en compte des besoins clients", "Conception d'interfaces utilisateur"],
+                        "links": [
+                            {
+                                "label": "Voir le sujet",
+                                "url": "../image/saé_sujet.pdf"
+                            },
+                            {
+                                "label": "Voir le code",
+                                "url": "../image/Sel Marin projet tkinter.py"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "project6",
+                        "title": "Construction et présentation d'indicateurs de performance",
+                        "technologies": ["Excel"],
+                        "description": "Analyse de la performance financière du groupe Fleury Michon avec calcul et présentation d'indicateurs clés.",
+                        "skills": ["Calcul et interprétation des ratios de rentabilité, profitabilité et productivité", "Analyse comparative sectorielle", "Présentation claire des résultats d'analyse", "Analyse de l'évolution temporelle des indicateurs économiques"],
+                        "links": [
+                            {
+                                "label": "Voir les données (1)",
+                                "url": "../image/Ressources FM-LS, Cptes Résultat FM-LS 2019 2023 et Calculs Indicateurs.xlsx"
+                            },
+                            {
+                                "label": "Voir les données (2)",
+                                "url": "../image/Ressources Groupe FM.xlsx"
+                            },
+                            {
+                                "label": "Voir le rapport",
+                                "url": "../image/Dossier détude Louis Titouan.pdf"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "project7",
+                        "title": "Concours dataviz",
+                        "technologies": ["Excel", "Python"],
+                        "description": "Participation à un concours de visualisation de données avec création de représentations visuelles impactantes.",
+                        "skills": ["Analyse exploratoire de données", "Création de visualisations impactantes", "Maîtrise des outils de dataviz", "Présentation claire des insights", "Storytelling avec les données"],
+                        "links": [
+                            {
+                                "label": "Voir le rapport",
+                                "url": "../image/Challenge Dataviz 2025 Noa Nolan Alexan Titouan Fabian.pdf"
+                            }
+                        ]
+                    }
+                ],
+                "year2": [
+                    {
+                        "id": "project2y1",
+                        "title": "Cours lycée",
+                        "technologies": ["Word", "PowerPoint", "HTML"],
+                        "description": "Réalisation de cours sur le HTML (création de site web) et d'une introduction au PHP, à destination d'élèves de première du lycée Paul Guérin à Niort.",
+                        "skills": ["Création de cours pédagogiques", "Utilisation d'outils de présentation", "Conception de supports de cours"],
+                        "links": [
+                            {
+                                "label": "Voir un exemple de cours",
+                                "url": "../image/Cours NSI .pdf"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "project2y2",
+                        "title": "Collecte de données web",
+                        "technologies": ["Python"],
+                        "description": "Développement de scripts de web scraping pour collecter des données de France Travail et montrer, à l'aide d'une carte, l'emplacement des recrutements dans la Data en Nouvelle-Aquitaine.",
+                        "skills": ["Compréhension des structures web", "Nettoyage et structuration de données", "Visualisation de données géographiques"],
+                        "links": [
+                            {
+                                "label": "Voir le code",
+                                "url": "../image/ws.py"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "project2y3",
+                        "title": "Reporting d'une analyse multivariée",
+                        "technologies": ["R (Shiny ou Flexdashboard)"],
+                        "description": "Création d’un outil d'aide à la décision (suivi automatisé et visuel de la pauvreté en France, 1970-2021) pour optimiser les politiques publiques départementales et régionales.(« Statistiques locales » de l’INSEE )",
+                        "skills": ["Creation d'outils de reporting interactifs", "Analyse multivariée", "Visualisation de données temporelles et géographiques"],
+                        "links": [
+                            {
+                                "label": "Voir le projet",
+                                "url": "../image/Presentation résultat visuel.pdf"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "project2y4",
+                        "title": "Développement d'un composant d'une solution décisionnelle",
+                        "technologies": ["Python"],
+                        "description": "Développement d’un dashboard interactif d'aide à la décision pour piloter la fusion de deux équipes du laboratoire LIAS. Analyse de la production scientifique de 19 chercheurs (2021-2025) et simulation d’impact (What-If) sur les performances de l'organisation.",
+                        "skills": ["Collecte de données (Scraping & APIs)", "Data Cleaning & Préparation", "Esprit critique", "Développement d'API REST", "Dataviz & Création de Dashboard"],
+                        "links": [
+                            {
+                                "label": "Voir le projet",
+                                "url": "../image/rapport_projet.md"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "project2y5",
+                        "title": "Application VBA & Apps Script Évènements du département SD",
+                        "technologies": ["VBA", "Apps Script"],
+                        "description": "L'objectif est de centraliser et de piloter le recensement des étudiants intéressés par la formation lors des différents événements de l'année (salons, journées portes ouvertes et immersions). Le projet a consisté à concevoir un questionnaire Google Forms pour la collecte de données, relié à un tableur Google Sheets automatisé via Google Apps Script pour le traitement des réponses et l'envoi automatique de courriels de suivi.",
+                        "skills": ["Conception de questionnaires en ligne", "Automatisation de la collecte et du traitement de données", "Creation de VBA", "Compréhension de Apps Script"],
+                        "links": [
+                            {
+                                "label": "Voir le excel",
+                                "url": "../image/projet.xlsm"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "stage2y",
+                        "title": "Stage de 2ème année",
+                        "cardLabel": "Stage",
+                        "technologies": ["Sphinx", "Excel"],
+                        "description": "Stage de 2e année au sein du laboratoire Léa Nature (site de Périgny) : digitalisation du service.",
+                        "links": [
+                            {
+                                "label": "Voir le rapport",
+                                "url": "../image/rapport stage titouan leblanc floch.pdf"
+                            }
+                        ]
+                    }
+                ],
+                "year3": []
+            }
+        };
+    </script>
+    <script src="../style/projects-generator.js"></script>
+</body>
+</html>
